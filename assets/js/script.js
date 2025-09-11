@@ -1,12 +1,12 @@
 import {loadUsers} from './user.js';
 import maClass from './classe.js';
 
- const c = new maClass()
-
-
-
-
-
+const t = new maClass('Parent', 'Enfant')
+t.custom = 58
+t.publicFn()
+console.log(t.prop)
+const h = t.cb2
+h()
 
 
 
