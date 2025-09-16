@@ -10,11 +10,11 @@ class A{
 
     static test(){
         
-        alert(new A().ttt)
+        //alert(new A().ttt)
     }
 
     publicFn(){
-        alert(this.#var2)
+        //alert(this.#var2)
     }
 
     coucou(_arg){
@@ -40,7 +40,7 @@ export default class B extends A{
     }
 
     cb(){
-        alert(this.variableTest)
+        //alert(this.variableTest)
         console.log('tradi')
     }
 
@@ -68,7 +68,7 @@ export default class B extends A{
     static retest = 'je suis static'
 
     static fn(){
-        alert(B.retest)
+        //alert(B.retest)
     }
 }
 
