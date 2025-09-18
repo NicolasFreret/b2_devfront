@@ -8,6 +8,7 @@
 
         :root{
             --width:0;
+            --gap:0;
         }
 
         img{
@@ -23,16 +24,27 @@
             display: grid;
             place-items: center;
 
+           
             .slider-wrapper{
                 height: 300px;
             }
 
             .slides{
                 display: flex;
-                gap:20px;
+                gap:var(--gap);
                 height: 100%;
                 width: 1040px;
                 overflow: hidden;
+                scroll-behavior: smooth;
+
+                 &:hover{
+                    cursor: grab;
+                }
+                &.active{
+                    cursor: grabbing;
+                    scroll-behavior: inherit;
+                }
+
             }
 
             .slide{

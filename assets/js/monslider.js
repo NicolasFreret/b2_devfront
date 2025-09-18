@@ -1,6 +1,13 @@
 import Slider from "./SuperSlider.js"
 
-new Slider("test")
+new Slider("test",{
+    nbSlide:3,
+    queries:{
+        1300: 5,
+        1000: 2,
+        500 : 1
+    }
+})
 
 // let test = "coucou"
 // test = "mkmkm"
